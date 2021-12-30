@@ -1,6 +1,14 @@
 # frozen_string_literal: true
 
 require "nft/checker"
+require "vcr"
+require "webmock"
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/vcr"
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

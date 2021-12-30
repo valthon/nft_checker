@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://testnets-api.opensea.io/assets?collection=untitled-collection-4919696&owner=0x051c6b791044102ae773e27fea21480ed6d653f4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Dec 2021 18:09:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Allow:
+      - GET, OPTIONS
+      Cache-Control:
+      - max-age=300
+      Expires:
+      - Thu, 30 Dec 2021 18:14:01 GMT
+      Referrer-Policy:
+      - same-origin
+      - strict-origin
+      Vary:
+      - Accept, Origin
+      Via:
+      - 1.1 spaces-router (279557a225d7)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Trace-Id:
+      - '6611299036146902576'
+      X-Xss-Protection:
+      - '0'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=rmUKQJDACbdetNSNkwYyTdx71G7S7CE.2sbfMIv6kBM-1640887773-0-AZqbPXQQFH1BSH65cZjK39s4a9t9/xeugH9+N7HJq3i1PnpQdOfe232Z6gL5UEJ7pra+iwZw/jZVLtEWQN0Mg+Y=;
+        path=/; expires=Thu, 30-Dec-21 18:39:33 GMT; domain=.opensea.io; HttpOnly;
+        Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6c5d38473ac01899-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"assets":[{"id":25543575,"token_id":"2311777711455776243141183398852532457844153089003796399814364866449093165057","num_sales":0,"background_color":null,"image_url":"https://lh3.googleusercontent.com/GZqqlICo3TvS84_VV3Cw9q4WpBn-XeB6KglpI46fnFSHDlC029VkPXqWuSx5VcWUBgLpMs0C2kZk7aiMgzZI-hxs7B5O7c1hNmrlmg","image_preview_url":"https://lh3.googleusercontent.com/GZqqlICo3TvS84_VV3Cw9q4WpBn-XeB6KglpI46fnFSHDlC029VkPXqWuSx5VcWUBgLpMs0C2kZk7aiMgzZI-hxs7B5O7c1hNmrlmg=s250","image_thumbnail_url":"https://lh3.googleusercontent.com/GZqqlICo3TvS84_VV3Cw9q4WpBn-XeB6KglpI46fnFSHDlC029VkPXqWuSx5VcWUBgLpMs0C2kZk7aiMgzZI-hxs7B5O7c1hNmrlmg=s128","image_original_url":null,"animation_url":null,"animation_original_url":null,"name":"Test
+        Logo 1","description":"Imagine that!","external_link":null,"asset_contract":{"address":"0x88b48f654c30e99bc2e4a1559b4dcf1ad93fa656","asset_contract_type":"semi-fungible","created_date":"2021-05-17T18:22:26.262750","name":"OpenSea
+        Collections","nft_version":null,"opensea_version":"2.1.0","owner":676,"schema_name":"ERC1155","symbol":"OPENSTORE","total_supply":null,"description":null,"external_link":null,"image_url":null,"default_to_fiat":false,"dev_buyer_fee_basis_points":0,"dev_seller_fee_basis_points":0,"only_proxied_transfers":false,"opensea_buyer_fee_basis_points":0,"opensea_seller_fee_basis_points":250,"buyer_fee_basis_points":0,"seller_fee_basis_points":250,"payout_address":null},"permalink":"https://testnets.opensea.io/assets/0x88b48f654c30e99bc2e4a1559b4dcf1ad93fa656/2311777711455776243141183398852532457844153089003796399814364866449093165057","collection":{"banner_image_url":null,"chat_url":null,"created_date":"2021-12-30T13:49:00.142375","default_to_fiat":false,"description":"","dev_buyer_fee_basis_points":"0","dev_seller_fee_basis_points":"500","discord_url":null,"display_data":{"card_display_style":"padded"},"external_url":null,"featured":false,"featured_image_url":null,"hidden":true,"safelist_request_status":"not_requested","image_url":"https://lh3.googleusercontent.com/eRoplxExtdM8V8RPEemsgxOzn9AS2X484UXg4BLL95MGiTTTBEnOBc3iFDYfstSYqSWNo_Aw3uOW-rQhbJz-PN0GRzTKFnL2XewW0w=s120","is_subject_to_whitelist":false,"large_image_url":null,"medium_username":null,"name":"Test
+        Prota Collection","only_proxied_transfers":false,"opensea_buyer_fee_basis_points":"0","opensea_seller_fee_basis_points":"250","payout_address":"0x051c6b791044102ae773e27fea21480ed6d653f4","require_email":false,"short_description":null,"slug":"untitled-collection-4919696","telegram_url":null,"twitter_username":null,"instagram_username":null,"wiki_url":null},"decimals":null,"token_metadata":null,"owner":{"user":{"username":"NullAddress"},"profile_img_url":"https://storage.googleapis.com/opensea-static/opensea-profile/1.png","address":"0x0000000000000000000000000000000000000000","config":""},"sell_orders":null,"creator":{"user":{"username":null},"profile_img_url":"https://storage.googleapis.com/opensea-static/opensea-profile/18.png","address":"0x051c6b791044102ae773e27fea21480ed6d653f4","config":""},"traits":[],"last_sale":null,"top_bid":null,"listing_date":null,"is_presale":true,"transfer_fee_payment_token":null,"transfer_fee":null}]}'
+  recorded_at: Thu, 30 Dec 2021 18:09:33 GMT
+- request:
+    method: get
+    uri: https://testnets-api.opensea.io/assets?collection=untitled-collection-4919696&owner=0x051c6b791044102ae773e27fea21480ed6d653f4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Dec 2021 18:09:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Allow:
+      - GET, OPTIONS
+      Cache-Control:
+      - max-age=300
+      Expires:
+      - Thu, 30 Dec 2021 18:14:01 GMT
+      Referrer-Policy:
+      - same-origin
+      - strict-origin
+      Vary:
+      - Accept, Origin
+      Via:
+      - 1.1 spaces-router (279557a225d7)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Trace-Id:
+      - '12882474371597093550'
+      X-Xss-Protection:
+      - '0'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=wGb6vjOZHHOkbGTK4mwSIcL10wwPcX4pZgFPgKcuJxE-1640887773-0-Afi63FgIhVraxjyPuVKmXGKm/T3AZ+JUWehIMjQv1NBBL9sd2RQNAk8vYmh3CJF/0jQVjGeaDtolZKMtZH8IkTA=;
+        path=/; expires=Thu, 30-Dec-21 18:39:33 GMT; domain=.opensea.io; HttpOnly;
+        Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6c5d3847fcf31869-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"assets":[{"id":25543575,"token_id":"2311777711455776243141183398852532457844153089003796399814364866449093165057","num_sales":0,"background_color":null,"image_url":"https://lh3.googleusercontent.com/GZqqlICo3TvS84_VV3Cw9q4WpBn-XeB6KglpI46fnFSHDlC029VkPXqWuSx5VcWUBgLpMs0C2kZk7aiMgzZI-hxs7B5O7c1hNmrlmg","image_preview_url":"https://lh3.googleusercontent.com/GZqqlICo3TvS84_VV3Cw9q4WpBn-XeB6KglpI46fnFSHDlC029VkPXqWuSx5VcWUBgLpMs0C2kZk7aiMgzZI-hxs7B5O7c1hNmrlmg=s250","image_thumbnail_url":"https://lh3.googleusercontent.com/GZqqlICo3TvS84_VV3Cw9q4WpBn-XeB6KglpI46fnFSHDlC029VkPXqWuSx5VcWUBgLpMs0C2kZk7aiMgzZI-hxs7B5O7c1hNmrlmg=s128","image_original_url":null,"animation_url":null,"animation_original_url":null,"name":"Test
+        Logo 1","description":"Imagine that!","external_link":null,"asset_contract":{"address":"0x88b48f654c30e99bc2e4a1559b4dcf1ad93fa656","asset_contract_type":"semi-fungible","created_date":"2021-05-17T18:22:26.262750","name":"OpenSea
+        Collections","nft_version":null,"opensea_version":"2.1.0","owner":676,"schema_name":"ERC1155","symbol":"OPENSTORE","total_supply":null,"description":null,"external_link":null,"image_url":null,"default_to_fiat":false,"dev_buyer_fee_basis_points":0,"dev_seller_fee_basis_points":0,"only_proxied_transfers":false,"opensea_buyer_fee_basis_points":0,"opensea_seller_fee_basis_points":250,"buyer_fee_basis_points":0,"seller_fee_basis_points":250,"payout_address":null},"permalink":"https://testnets.opensea.io/assets/0x88b48f654c30e99bc2e4a1559b4dcf1ad93fa656/2311777711455776243141183398852532457844153089003796399814364866449093165057","collection":{"banner_image_url":null,"chat_url":null,"created_date":"2021-12-30T13:49:00.142375","default_to_fiat":false,"description":"","dev_buyer_fee_basis_points":"0","dev_seller_fee_basis_points":"500","discord_url":null,"display_data":{"card_display_style":"padded"},"external_url":null,"featured":false,"featured_image_url":null,"hidden":true,"safelist_request_status":"not_requested","image_url":"https://lh3.googleusercontent.com/eRoplxExtdM8V8RPEemsgxOzn9AS2X484UXg4BLL95MGiTTTBEnOBc3iFDYfstSYqSWNo_Aw3uOW-rQhbJz-PN0GRzTKFnL2XewW0w=s120","is_subject_to_whitelist":false,"large_image_url":null,"medium_username":null,"name":"Test
+        Prota Collection","only_proxied_transfers":false,"opensea_buyer_fee_basis_points":"0","opensea_seller_fee_basis_points":"250","payout_address":"0x051c6b791044102ae773e27fea21480ed6d653f4","require_email":false,"short_description":null,"slug":"untitled-collection-4919696","telegram_url":null,"twitter_username":null,"instagram_username":null,"wiki_url":null},"decimals":null,"token_metadata":null,"owner":{"user":{"username":"NullAddress"},"profile_img_url":"https://storage.googleapis.com/opensea-static/opensea-profile/1.png","address":"0x0000000000000000000000000000000000000000","config":""},"sell_orders":null,"creator":{"user":{"username":null},"profile_img_url":"https://storage.googleapis.com/opensea-static/opensea-profile/18.png","address":"0x051c6b791044102ae773e27fea21480ed6d653f4","config":""},"traits":[],"last_sale":null,"top_bid":null,"listing_date":null,"is_presale":true,"transfer_fee_payment_token":null,"transfer_fee":null}]}'
+  recorded_at: Thu, 30 Dec 2021 18:09:33 GMT
+recorded_with: VCR 6.0.0

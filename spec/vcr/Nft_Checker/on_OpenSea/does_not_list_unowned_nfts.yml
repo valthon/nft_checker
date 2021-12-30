@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://testnets-api.opensea.io/assets?collection=untitled-collection-4919696&owner=0x052c6b491044102ae373e27fea21380ed6d6a3f4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 429
+      message: Too Many Requests
+    headers:
+      Date:
+      - Thu, 30 Dec 2021 18:09:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '67'
+      Connection:
+      - keep-alive
+      Allow:
+      - GET, OPTIONS
+      Referrer-Policy:
+      - same-origin
+      Retry-After:
+      - '1'
+      Vary:
+      - Accept, Origin
+      Via:
+      - 1.1 spaces-router (279557a225d7)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Trace-Id:
+      - '2763174048253136998'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=Io8aNTjufLCQl0QEn5.R9f4LD.HpKwDj4xNb6R4iT.g-1640887773-0-ARwWc1ycc/MvdZ8WSlcUYtlAU9iAV8r12JmcM2edpFD9WVTSex/XAga/ngYImKibsFYGkMFykjmtxsDrwWVk00I=;
+        path=/; expires=Thu, 30-Dec-21 18:39:33 GMT; domain=.opensea.io; HttpOnly;
+        Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6c5d3848b89278ed-EWR
+    body:
+      encoding: UTF-8
+      string: '{"detail":"Request was throttled. Expected available in 1 second."}'
+  recorded_at: Thu, 30 Dec 2021 18:09:33 GMT
+recorded_with: VCR 6.0.0
