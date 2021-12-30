@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://testnets-api.opensea.io/assets?collection=untitled-collection-4919696&owner=0x052c6b491044102ae373e27fea21380ed6d6a3f4
+    uri: https://testnets-api.opensea.io/assets?collection=untitled-collection-4919696&owner=0x052c6B491044102Ae373e27FEA21380ed6D6A3F4
     body:
       encoding: US-ASCII
       string: ''
@@ -15,23 +15,26 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 429
-      message: Too Many Requests
+      code: 200
+      message: OK
     headers:
       Date:
-      - Thu, 30 Dec 2021 18:09:33 GMT
+      - Thu, 30 Dec 2021 21:43:49 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '67'
+      - '13'
       Connection:
       - keep-alive
       Allow:
-      - GET, OPTIONS
+      - OPTIONS, GET
+      Cache-Control:
+      - max-age=300
+      Expires:
+      - Thu, 30 Dec 2021 21:48:49 GMT
       Referrer-Policy:
       - same-origin
-      Retry-After:
-      - '1'
+      - strict-origin
       Vary:
       - Accept, Origin
       Via:
@@ -40,22 +43,26 @@ http_interactions:
       - nosniff
       X-Frame-Options:
       - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
       X-Trace-Id:
-      - '2763174048253136998'
+      - '12683279214789774499'
+      X-Xss-Protection:
+      - '0'
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Set-Cookie:
-      - __cf_bm=Io8aNTjufLCQl0QEn5.R9f4LD.HpKwDj4xNb6R4iT.g-1640887773-0-ARwWc1ycc/MvdZ8WSlcUYtlAU9iAV8r12JmcM2edpFD9WVTSex/XAga/ngYImKibsFYGkMFykjmtxsDrwWVk00I=;
-        path=/; expires=Thu, 30-Dec-21 18:39:33 GMT; domain=.opensea.io; HttpOnly;
+      - __cf_bm=6jeS0Sc1Z2LI4_5MEOeUWXY9qLsXGkNeEGtY7vQ3Yp0-1640900629-0-Af12tFlr/7Gl2NxfeLzli8zewt4jqYgJTRVNomAT6o2QFbS0g2U3N3RR9w7JIzweMR7fy61m2KuqxUo8+UjUXmc=;
+        path=/; expires=Thu, 30-Dec-21 22:13:49 GMT; domain=.opensea.io; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 6c5d3848b89278ed-EWR
+      - 6c5e72250a8b8c6f-EWR
     body:
       encoding: UTF-8
-      string: '{"detail":"Request was throttled. Expected available in 1 second."}'
-  recorded_at: Thu, 30 Dec 2021 18:09:33 GMT
+      string: '{"assets":[]}'
+  recorded_at: Thu, 30 Dec 2021 21:43:49 GMT
 recorded_with: VCR 6.0.0

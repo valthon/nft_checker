@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in nft-checker.gemspec
+# Specify your gem's dependencies in nft_checker.gemspec
 gemspec
 
 gem "httparty", "~> 0.20.0"

@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative "lib/nft/checker/version"
+require_relative "lib/nft_checker/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "nft-checker"
-  spec.version = Nft::Checker::VERSION
+  spec.name = "nft_checker"
+  spec.version = NftChecker::VERSION
   spec.authors = ["David J Parrott"]
   spec.email = ["valthon@nothlav.net"]
 
   spec.summary = "Utility to verify ownership of an NFT"
-  spec.homepage = "https://github.com/valthon/nft-checker"
+  spec.homepage = "https://github.com/valthon/nft_checker"
   spec.required_ruby_version = ">= 2.6.0"
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
-  spec.metadata["changelog_uri"] = "https://github.com/valthon/nft-checker/blob/trunk/CHANGELOG.md"
+  spec.metadata["changelog_uri"] = "https://github.com/valthon/nft_checker/blob/trunk/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

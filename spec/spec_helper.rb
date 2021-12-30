@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "nft/checker"
+require "nft_checker"
 require "vcr"
 require "webmock"
 

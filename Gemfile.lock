@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nft-checker (0.1.0)
+    nft_checker (0.1.0)
       httparty (~> 0.20)
 
 GEM
@@ -67,10 +67,11 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   httparty (~> 0.20.0)
-  nft-checker!
+  nft_checker!
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.21)

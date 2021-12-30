@@ -1,15 +1,13 @@
-# Nft::Checker
+# NftChecker
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nft/checker`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+NFT Checker is a utility to verify NFT ownership.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'nft-checker'
+gem 'nft_checker'
 ```
 
 And then execute:
@@ -18,11 +16,30 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install nft-checker
+    $ gem install nft_checker
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'nft_checker'
+checker = NftChecker.init(:opensea)
+# or, for testnets:
+# checker = NftChecker.init(:opensea, testnet: true)
+
+# List all "naturedivas" still owned by AleyArt
+list = checker.list_nfts({slug: naturedivas}, "0x422699b0f5891c8ddd306c08d9856032264c5e8e" )
+p list.map {|nft| nft["image_url"]} # [ "https://...", ... ]
+
+# Verify that naturediva 016 is still owned by Thision
+still_owned = checker.verify_owner(
+  {
+    contract_address: "0x495f947276749Ce646f68AC8c248420045cb7b5e",
+    token_id: "29920848932956748486580529385461081269564523998318357035541486687674930561025"
+  },
+  "0x3dec7052aa8d55b3b6b6ad2c6bce195a9acca404"
+)
+p still_owned # true
+```
 
 ## Development
 
@@ -32,4 +49,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/nft-checker.
+Bug reports and pull requests are welcome on GitHub at https://github.com/valthon/nft_checker.
