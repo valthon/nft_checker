@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.3.0] - 2021-12-31
+
+Add `fetch_nft_for_owner` method to public API
+
 ## [0.2.0] - 2021-12-31
 
 Iterate on public API for easier use

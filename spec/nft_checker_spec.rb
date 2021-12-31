@@ -76,5 +76,16 @@ RSpec.describe NftChecker do
         expect(checker.in_collection?(TEST_COLLECTION, FAKE_NFT)).to be_falsey
       end
     end
+
+    describe "#fetch_nft_for_owner" do
+      it "retrieves an owned nft" do
+        nft = checker.fetch_nft_for_owner(TEST_ETH_WALLET, TEST_NFT)
+        expect(nft["name"]).to eq("Test Logo 1")
+        expect(nft["collection"]).to include("slug" => TEST_COLLECTION[:slug])
+      end
+      it "does not retrieve an unowned nft" do
+        expect(checker.fetch_nft_for_owner(ALT_ETH_WALLET, TEST_NFT)).to be_nil
+      end
+    end
   end
 end

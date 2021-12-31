@@ -49,16 +49,6 @@ module NftChecker
       end
     end
 
-    private
-
-    def fetch_nft(nft_metadata)
-      contract, token = nft_metadata.slice(:contract_address, :token_id).values
-      rez = HTTParty.get(@url_base + "asset/#{contract}/#{token}/")
-      handle_response_codes(rez, not_found: nil) do
-        rez.parsed_response
-      end
-    end
-
     def fetch_nft_for_owner(owner_address, nft_metadata)
       contract, token = nft_metadata.slice(:contract_address, :token_id).values
       rez = HTTParty.get(@url_base + "asset/#{contract}/#{token}/", query: { account_address: owner_address })
@@ -67,6 +57,16 @@ module NftChecker
         data if data["ownership"] &&
                 data["ownership"]["owner"]["address"].casecmp(owner_address).zero? &&
                 data["ownership"]["quantity"].to_i.positive?
+      end
+    end
+
+    private
+
+    def fetch_nft(nft_metadata)
+      contract, token = nft_metadata.slice(:contract_address, :token_id).values
+      rez = HTTParty.get(@url_base + "asset/#{contract}/#{token}/")
+      handle_response_codes(rez, not_found: nil) do
+        rez.parsed_response
       end
     end
 
