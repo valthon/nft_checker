@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://testnets-api.opensea.io/assets?collection=untitled-collection-4919696&owner=0x052c6B491044102Ae373e27FEA21380ed6D6A3F4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 31 Dec 2021 16:46:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '13'
+      Connection:
+      - keep-alive
+      Allow:
+      - GET, OPTIONS
+      Cache-Control:
+      - max-age=300
+      Expires:
+      - Fri, 31 Dec 2021 16:51:54 GMT
+      Referrer-Policy:
+      - same-origin
+      - strict-origin
+      Vary:
+      - Accept, Origin
+      Via:
+      - 1.1 spaces-router (279557a225d7)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Trace-Id:
+      - '15364500474735021090'
+      X-Xss-Protection:
+      - '0'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=lxUxJ5bW3Uiznj9edl8YLoEhomM_7LIe.8vPXxNEClE-1640969214-0-AfAv+isB88SHr+4eyPH1n31kIqgZIlCktj5C+Vq0AoV6GGQ2JeQmCGCh/XJ6CdP6UHcA7KyuepwpgcVSUHQQfVA=;
+        path=/; expires=Fri, 31-Dec-21 17:16:54 GMT; domain=.opensea.io; HttpOnly;
+        Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6c64fc9378b78cec-EWR
+    body:
+      encoding: UTF-8
+      string: '{"assets":[]}'
+  recorded_at: Fri, 31 Dec 2021 16:46:54 GMT
+recorded_with: VCR 6.0.0

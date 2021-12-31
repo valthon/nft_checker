@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "nft_checker/version"
+require_relative "nft_checker/errors"
 require_relative "nft_checker/open_sea"
 
 ###
@@ -15,9 +16,6 @@ require_relative "nft_checker/open_sea"
 # * list_nfts(collection_metadata, owner_address): [<NFT ID>,...]
 #
 module NftChecker
-  class Error < StandardError; end
-  class Throttled < Error; end
-
   def self.init(source, options = {})
     case source.to_s
     when /\Aopen\w?sea(.io)?\z/i

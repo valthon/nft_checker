@@ -31,14 +31,25 @@ list = checker.list_nfts({slug: naturedivas}, "0x422699b0f5891c8ddd306c08d985603
 p list.map {|nft| nft["image_url"]} # [ "https://...", ... ]
 
 # Verify that naturediva 016 is still owned by Thision
-still_owned = checker.verify_owner(
+still_owned = checker.owner?(
+  "0x3dec7052aa8d55b3b6b6ad2c6bce195a9acca404",
   {
     contract_address: "0x495f947276749Ce646f68AC8c248420045cb7b5e",
     token_id: "29920848932956748486580529385461081269564523998318357035541486687674930561025"
-  },
-  "0x3dec7052aa8d55b3b6b6ad2c6bce195a9acca404"
+  }
 )
 p still_owned # true
+
+# Verify that naturediva 016 is part of the naturediva collection
+verified = checker.in_collection?(
+  {slug: naturedivas},
+  {
+    contract_address: "0x495f947276749Ce646f68AC8c248420045cb7b5e",
+    token_id: "29920848932956748486580529385461081269564523998318357035541486687674930561025"
+  }
+)
+p verified # true
+
 ```
 
 ## Development
